@@ -1,0 +1,111 @@
+from pyspark import SparkContext
+ 
+import json
+import re
+import os
+import sys
+import unicodedata
+ 
+def get_json_data(jsonString):
+    data = json.loads(jsonString)
+    data1={"retweet_id":[],"retweet_time":[],"retweet_fav_count":[],"retweet_text":[],"retweet_count":[],"retweet_name":[],"retweet_country":[],"tweet_follow_count":[],"tweeter_location":[],"tweet_fav_count":[],"tweeter_name":[],"tweet_url":[],"tweeter_time_zone":[],"retweet_hashtags":[],"tweeter_id":[],"retweet_tweet_favorite_count":[],"tweet_text":[],"retweet_count_ontweet":[],"user_follow_count":[],"user_fav_count":[],"user_name":[],"user_url":[],"user_time_zone":[],"tweet_hashtags":[],"user_location":[]}
+    mydata =""
+
+    if data['lang']=='en':
+        data1["retweet_id"]=data['id']
+        data1["retweet_time"]=data['timestamp_ms']
+        data1["retweet_fav_count"]=data['favorite_count']
+        retweet = unicodedata.normalize('NFKD', data['text']).encode('ascii', 'ignore')
+        retweet = re.sub(' +', ' ', retweet)
+        retweet = re.sub(r'(?:(?:\s|.|\[|)http|(?:\s|.|\[|)http).*(?:\s|\n|.|\r)', '', retweet)
+        retweet = re.sub(' +', ' ', retweet)
+        data1["retweet_text"]=(" ".join(retweet.split()))
+        data1["retweet_count"]= data['retweet_count']
+
+        if data['place'] is not None :
+            data2 =  data['place']
+            for item in data2:
+                if item == 'full_name':
+                    data1["retweet_name"]= unicodedata.normalize('NFKD', data2['name']).encode('ascii', 'ignore')
+                if item == 'country':
+                    data1["retweet_country"]= unicodedata.normalize('NFKD', data2['country']).encode('ascii', 'ignore')
+
+        if 'user' is not None:
+            data3 =  data['user']
+            if data3['lang'] == 'en':
+                for iteam in data3:
+                    if iteam == 'followers_count':
+                        data1["tweet_follow_count"]= data3['followers_count']
+                    if iteam == 'location':
+                        data1["tweeter_location"] = unicodedata.normalize('NFKD', data3['location']).encode('ascii', 'ignore')
+                    if iteam == 'favourites_count':
+                        data1["tweet_fav_count"]= data3['favourites_count']
+                    if iteam == 'name':
+                        data1["tweeter_name"]= unicodedata.normalize('NFKD', data3['name']).encode('ascii', 'ignore')
+                    if iteam == 'url':
+                        data1["tweet_url"] = data3['url']
+                    if iteam == 'time_zone':
+                        data1["tweeter_time_zone"]= data3['time_zone']
+
+        if 'entities' in data.keys():
+            tags = data['entities']['hashtags']
+            for tag in tags:
+                data1["retweet_hashtags"]=unicodedata.normalize('NFKD', tag['text']).encode('ascii', 'ignore')
+
+    if 'retweeted_status' in data:
+        data4 = data['retweeted_status']
+        if data4['lang'] == 'en':
+            data1["tweeter_id"]= data4['id']
+            data1["retweet_tweet_favorite_count"] = data4['favorite_count']
+            tweet_text = unicodedata.normalize('NFKD', data4['text']).encode('ascii', 'ignore')
+            tweet_text= re.sub(' +', ' ', tweet_text)
+            tweet_text = re.sub(r'(?:(?:\s|.|\[|)http|(?:\s|.|\[|)http).*(?:\s|\n|.|\r)', '', tweet_text)
+            tweet = re.sub(' +', ' ', tweet_text)
+            data1["tweet_text"]=(" ".join(tweet_text.split()))
+            data1["retweet_count_ontweet"]= data4['retweet_count']
+            tweet_user = data4['user']
+            if tweet_user is not None:
+               data5=tweet_user
+               if data5['lang'] == 'en':
+                  for abc in data5:
+
+                      if abc == 'followers_count':
+                         data1["user_follow_count"]=data5['followers_count']
+
+                      if abc == 'location':
+                          data1["user_location"]= unicodedata.normalize('NFKD', data5['location']).encode('ascii', 'ignore')
+
+                      if abc == 'favourites_count':
+                         data1["user_fav_count"]= data5['favourites_count']
+
+                      if abc == 'name':
+                         data1["user_name"]= unicodedata.normalize('NFKD', data5['name']).encode('ascii', 'ignore')
+
+                      if abc == 'url':
+                         data1["user_url"]=data5['url']
+
+                      if abc == 'time_zone':
+                         data1["user_time_zone"]= data5["time_zone"]
+
+            if 'entities' in data4.keys():
+                tags = data4['entities']['hashtags']
+                for tag in tags:
+                    data1["tweet_hashtags"] = unicodedata.normalize('NFKD', tag['text']).encode('ascii', 'ignore')
+                for d in data1:
+
+                    if d is not None:
+
+                       mydata = mydata + str(d)+ ':'+ str(data1[d]).encode('utf-8' )+ '\t'
+
+    return mydata
+
+def getGoodRecord(inputdata):
+    record = get_json_data(inputdata)
+    if record != "":
+       return record
+ 
+sc = SparkContext("local", "Twitter data processing!")
+mydata = sc.textFile("/home/sree/Desktop/project/rawJson")
+parsedata = mydata.map(getGoodRecord)
+result = parsedata.filter(lambda line: line is not None)
+result.saveAsTextFile("/home/sree/Desktop/project/result")
