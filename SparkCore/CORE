@@ -1,1 +1,38 @@
 ###CORE
+	Spark Core contains basic functionality of spark, including components for task scheduling, memory management, fault recovery, interacting with storage systems.
+	Spark provides is a resilient distributed dataset (RDD), which is a collection of elements partitioned across the nodes of the cluster that can be operated on in parallel. Each RDD split into multiple partitions.
+	RDD’s are typesafe in compile time and RDD operations can’t optimized by spark. 
+	RDD’s created by three ways
+             1) Loading external datasets
+             2) parallelize the collection of objects
+             3) transforms existing RDD to new RDD
+	They are two types of operations present
+              1) Transformations    
+              2) Actions
+	All transformations in Spark are lazy, the transformations are only computed when an action requires a result to be returned to the driver program.
+	Spark scans the file only until it finds the first match lines.
+	If we want reuse RDD in multiple actions, so we can use RDD.persist()
+	They are two types transformation in spark
+        1)	narrow → filter, count, distinct, sample
+        2)	wider → flatMap,Union,Cartesian,groupByKey,reduceBykey 
+	Certain transformations can be pipe-lined which is an optimization that Spark uses to improve performance of computations.
+
+	Transformation list 
+        1) map                         12) groupByKey              
+        2) filter                      13) reduceByKey        
+        3) flatMap                     14) aggregateByKey
+        4) MapPartitions               15) sortByKey
+        5) MapPartitionsWithIndex      16) Join
+        6) sample                      17) cogroup
+        7) union                       18) cartesian
+        8) intersection                19) pipe
+        9) distinct                    20) coalesce
+        10) reparation 
+        11)repartitionAndSortWithinPartitions
+	actions list
+        1) reduce                  2) collect   
+        3) count                   4) first
+        5) take                    6) takeSample
+        7) takeOrdered             
+        8) CountByKey              9) foreach
+        10) saveAs(TextFile,SequenceFile, ObjectFile)
