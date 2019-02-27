@@ -30,7 +30,7 @@ class CoreExamples {
       val sqlContext = new SQLContext(sc)
       import sqlContext.implicits._
       val data = sc.textFile("/home/srinu/datasets/UserRecords.txt")
-      val connection = new training()
+      val connection = new CoreExamples()
       val data2 = connection.transformations(data).toDF()
       val data3 = connection.actions(data2)
     }
