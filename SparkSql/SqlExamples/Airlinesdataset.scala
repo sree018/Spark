@@ -12,7 +12,7 @@ object analysisOfData{
    val spark = SparkSession.builder().appName("analysis of AirlinesData").master("local[*]").getOrCreate()
 
     val routes = spark.sparkContext.textFile("/home/Desktop/Air-datasets/routes.dat")
-    val routesData = routes.map(getRoute).foreach(println)
+    val routesData = routes.map(getRoute).toDF().registerTempTable("ROUTES")
 
     val airline = spark.sparkContext.textFile("/home/Desktop/Air-datasets/Final_airlines")
     val airlineData = airline.map(getAirline).toDF().registerTempTable("AIRLINES")
