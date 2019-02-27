@@ -8,8 +8,8 @@
 	They are two types of operations present
               1) Transformations    
               2) Actions
-	All transformations in Spark are lazy, the transformations are only computed when an action requires a result to be returned to the driver program.
-	Spark scans the file only until it finds the first match lines.
+	All transformations in Spark are lazy, RDDs keeps a track of transformations and checks them periodically. 
+If a node fails, it can rebuild the lost RDD partition on the other nodes, in parallel.
 	If we want reuse RDD in multiple actions, so we can use RDD.persist()
 	They are two types transformation in spark
         1)	narrow → filter, count, distinct, sample
@@ -29,6 +29,7 @@
         10) reparation 
         11)repartitionAndSortWithinPartitions
 	actions list
+ actions which return a value to the driver program after performing the computation on the data.
         1) reduce                  2) collect   
         3) count                   4) first
         5) take                    6) takeSample
