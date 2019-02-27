@@ -36,3 +36,20 @@ If a node fails, it can rebuild the lost RDD partition on the other nodes, in pa
         7) takeOrdered             
         8) CountByKey              9) foreach
         10) saveAs(TextFile,SequenceFile, ObjectFile)
+        
+        
+        
+Spark Partitioners:
+  In order to store the same type of data in each partition we go for partitioner. 
+Spark has two types of partitioning techniques. One is HashPartitioner and the other is RangePartitioner.
+
+HashPartitioner
+	HashPartitioner works on Java’s Object.hashcode(). The concept of hashcode() is that objects which are
+  equal should have the same hashcode.  So based on this hashcode() concept HashPartitioner will divide the
+  keys that have the same hashcode().
+
+RangePartitioner
+	If there are sortable records, then range partition will divide the records almost in equal ranges. 
+  The ranges are determined by sampling the content of the RDD passed in.  
+  First, the RangePartitioner will sort the records based on the key and 
+  then it will divide the records into a number of partitions based on the given value.
