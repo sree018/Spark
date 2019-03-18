@@ -5,7 +5,7 @@ object mysqlToSpark extends App {
  // Class.forName("com.mysql.jdbc.Driver").newInstance
   val mysql_car_databases= spark.read.format("jdbc").option("url","jdbc:mysql://localhost:3306/dataSources")
                                   .option("dbtable","CarData")
-                                  .option("user","root").option("password","S@dama018")
+                                  .option("user","root").option("password","----")
                                   .load().createOrReplaceGlobalTempView("cars")
          spark.sql("select * from cars").show()
    
