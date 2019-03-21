@@ -1,17 +1,23 @@
 Spark SQL supports accessing of data using standard SQL queries and HiveQL, a SQL-like query language that Hive uses.
 DataFrames are distributed collection of data, organized into named columns and DataFrames are not typesafe in compile time.
-Datasets are distributed collection of data, organized into tables or databases and these typesafe in compile time and dataset operations are optimized by Catalyst.
+Datasets are distributed collection of data, organized into tables or databases and these typesafe in compile time
+-and dataset operations are optimized by Catalyst.
 Datasets are used less memory. First will load data into RDD and convert into DataFrames.
-In SQL or NoSQL databases, Spark SQL offers performance query optimizations using Logical Query Plan Optimizer, code generation and Tungsten execution engine with its own Internal Binary Row Format.
-Datasets enable compact binary representation using compressed columnar format that is stored in managed objects outside JVM’s heap.
+In SQL or NoSQL databases, Spark SQL offers performance query optimizations using Logical Query Plan Optimizer,
+-code generation and Tungsten execution engine with its own Internal Binary Row Format.
+Datasets enable compact binary representation using compressed columnar format that is stored in managed objects 
+-outside JVM’s heap.
 It is supposed to speed computations up by reducing memory usage and GCs.
-A SQL query engine for relational and NoSQL databases with direct queries on self-describing and semi-structured data in files, e.g. JSON or Parquet, and HBase tables without needing to specify metadata definitions in a centralized store.
+A SQL query engine for relational and NoSQL databases with direct queries on self-describing
+and semi-structured data in files, e.g. JSON or Parquet,
+and HBase tables without needing to specify metadata definitions in a centralized store.
 
 Spark SQL comes with the different APIs to work with
           •	Dataset API
           •	Structured Streaming API
           •	JDBC/ODBC fans
-Spark SQL comes with a uniform interface for data access in distributed storage systems like Cassandra or HDFS (Hive, Parquet, JSON) using specialized DataFrameReader and DataFrameWriter objects.
+Spark SQL comes with a uniform interface for data access in distributed storage systems like Cassandra 
+or HDFS (Hive, Parquet, JSON) using specialized DataFrameReader and DataFrameWriter objects.
 
 Functions in Spark SQL
           •	User Defined Functions
@@ -41,15 +47,22 @@ Analysis:
               Catlog: which converts Unresolved Logical Plan to Logical Plan.
 
 Logical plan optimization:
-  The logical plan optimization phase applies standard rule-based optimizations to the logical plan. These include constant folding, predicate pushdown, projection pruning, null propagation, Boolean expression simplification, and other rules.
-  I would like to draw special attention to the predicate the pushdown rule here. The concept is simple: if you issue a query in one place to run against some massive data, which is in another place, it can lead to the movement of a lot of unnecessary data across the network.
+  The logical plan optimization phase applies standard rule-based optimizations to the logical plan.
+  These include constant folding, predicate pushdown, projection pruning, null propagation, Boolean expression simplification,
+  and other rules.
+  I would like to draw special attention to the predicate the pushdown rule here.
+  The concept is simple: if you issue a query in one place to run against some massive data, which is in another place, 
+  it can lead to the movement of a lot of unnecessary data across the network.
 
 Physical planning:
-  In the Physical Planning phase, Spark SQL takes a logical plan and generates one or more physical plans. It then measures the cost of each Physical Plan and generates one Physical Plan based cost.
+  In the Physical Planning phase, Spark SQL takes a logical plan and generates one or more physical plans.
+  It then measures the cost of each Physical Plan and generates one Physical Plan based cost.
 
 Code generation:
-  The final phase of query optimization involves generating the Java byte-code to run on each machine. It uses a special Scala feature called Quasi quotes to accomplish this.
+  The final phase of query optimization involves generating the Java byte-code to run on each machine.
+  It uses a special Scala feature called Quasi quotes to accomplish this.
 
-Case classes are special classes in Scala that provide you with the boilerplate implementation of the constructor, getters (accessors), equals, and hashCode to implement Serializable. 
+Case classes are special classes in Scala that provide you with the boilerplate implementation of the constructor, 
+getters (accessors), equals, and hashCode to implement Serializable. 
 Case classes work really well to encapsulate data as objects
 
