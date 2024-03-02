@@ -1,0 +1,221 @@
+2024-02-10 14:31:33 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:34:06 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:34:10 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:34:36 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:34:42 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:35:50 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:35:50 INFO  Runner$:16 - Job completion time : 0
+2024-02-10 14:44:42 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:44:42 ERROR Runner$:11 - Vector(())
+2024-02-10 14:45:22 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:45:23 ERROR Runner$:11 - [Lscala.runtime.BoxedUnit;@7823a2f9
+2024-02-10 14:47:41 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:47:41 ERROR Runner$:11 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 14:47:41 ERROR Runner$:11 - [Lscala.runtime.BoxedUnit;@675d3402
+2024-02-10 14:48:09 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:48:09 ERROR Runner$:11 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 14:48:09 ERROR Runner$:11 - args(1) : ingestion
+2024-02-10 14:48:09 ERROR Runner$:11 - [Lscala.runtime.BoxedUnit;@675d3402
+2024-02-10 14:51:52 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:51:52 ERROR Runner$:11 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 14:51:52 ERROR Runner$:11 - args(1) : ingestion
+2024-02-10 14:51:52 ERROR Runner$:11 - [Lscala.runtime.BoxedUnit;@675d3402
+2024-02-10 14:52:34 ERROR Runner$:10 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 14:52:34 ERROR Runner$:11 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 14:52:34 ERROR Runner$:11 - args(1) : ingestion
+2024-02-10 14:52:34 ERROR Runner$:11 - [Lscala.runtime.BoxedUnit;@675d3402
+2024-02-10 14:52:34 ERROR Runner$:12 - Please submit enough arguments  to job
+2024-02-10 15:07:08 INFO  Runner$:19 - Job completion time : 0
+2024-02-10 15:08:23 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:08:23 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:08:23 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:08:23 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:08:23 INFO  Runner$:16 - [Lscala.runtime.BoxedUnit;@482f8f11
+2024-02-10 15:08:23 INFO  Runner$:20 - Job completion time : 0
+2024-02-10 15:08:49 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:08:49 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:08:49 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:08:49 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:08:49 INFO  Runner$:16 - [Lscala.runtime.BoxedUnit;@4cc0edeb
+2024-02-10 15:08:49 INFO  Runner$:20 - Job completion time : 0
+2024-02-10 15:09:38 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:09:39 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:09:39 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:09:39 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:09:39 INFO  Runner$:20 - Job completion time : 0
+2024-02-10 15:10:13 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:10:13 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:10:13 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:10:13 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:10:13 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:10:13 INFO  Runner$:21 - Job completion time : 0
+2024-02-10 15:10:28 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:10:28 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:10:28 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:10:28 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:10:28 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:10:28 INFO  Runner$:21 - Job completion time : 0
+2024-02-10 15:24:27 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:24:27 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:24:27 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:24:27 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:24:27 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:24:27 INFO  Runner$:21 - Job completion time : 0
+2024-02-10 15:29:04 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:29:04 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:29:04 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:29:04 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:29:04 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:29:04 INFO  Runner$:21 - Job completion time : 0
+2024-02-10 15:29:36 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:29:37 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:29:37 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:29:37 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:29:37 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:29:37 INFO  Process:12 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 15:29:37 INFO  Runner$:22 - Job completion time : 0
+2024-02-10 15:32:28 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:32:28 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:32:28 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:32:28 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:32:28 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:32:28 INFO  Process:13 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 15:32:28 INFO  Runner$:22 - Job completion time : 0
+2024-02-10 15:32:46 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:32:46 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:32:46 INFO  Runner$:16 - args(1) : ingestion1
+2024-02-10 15:32:46 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:32:46 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:32:46 INFO  Process:13 - INGESTION1 Job started for ETL_FRMAE_WORK
+2024-02-10 15:32:46 INFO  Process:22 - args(1) is type of etl like INGESTION,TRANSFORMATION and FILE_WRITE
+2024-02-10 15:32:46 INFO  Process:23 - com.srinu.spark.etl.farmework.Process.<init>(Process.scala:18)
+com.srinu.spark.etl.farmework.Runner$.main(Runner.scala:18)
+com.srinu.spark.etl.farmework.Runner.main(Runner.scala)
+2024-02-10 15:32:46 INFO  Runner$:22 - Job completion time : 0
+2024-02-10 15:33:04 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:33:04 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:33:04 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:33:04 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:33:04 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:33:04 INFO  Process:13 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 15:33:04 INFO  Runner$:22 - Job completion time : 0
+2024-02-10 15:54:51 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:54:51 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:54:51 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:54:51 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:54:51 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:54:51 INFO  Process:16 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 15:57:05 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:57:05 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:57:05 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:57:05 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:57:05 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:57:06 INFO  Process:16 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 15:58:31 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 15:58:31 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 15:58:31 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 15:58:31 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 15:58:31 INFO  Runner$:17 - ###########################################################
+2024-02-10 15:58:31 INFO  Process:16 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:01:11 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:01:11 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:01:11 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:01:11 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:01:11 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:01:11 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:03:09 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:03:10 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:03:10 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:03:10 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:03:10 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:03:10 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:03:12 INFO  Process:20 - spark appId : local-1707598991857
+2024-02-10 16:03:12 INFO  Process:29 - 3
+2024-02-10 16:03:12 INFO  Process:30 - com.srinu.spark.etl.farmework.Process.<init>(Process.scala:22)
+com.srinu.spark.etl.farmework.Runner$.main(Runner.scala:18)
+com.srinu.spark.etl.farmework.Runner.main(Runner.scala)
+2024-02-10 16:03:12 INFO  Runner$:22 - Job completion time : 2
+2024-02-10 16:03:42 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:03:42 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:03:42 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:03:42 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:03:42 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:03:42 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:03:44 INFO  Process:20 - spark appId : local-1707599024278
+2024-02-10 16:03:44 INFO  Process:29 - 3
+2024-02-10 16:03:44 INFO  Process:30 - com.srinu.spark.etl.farmework.Process.<init>(Process.scala:22)
+com.srinu.spark.etl.farmework.Runner$.main(Runner.scala:18)
+com.srinu.spark.etl.farmework.Runner.main(Runner.scala)
+2024-02-10 16:03:44 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:04:12 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:04:12 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:04:12 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:04:12 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:04:12 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:04:12 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:04:14 INFO  Process:20 - spark appId : local-1707599054202
+2024-02-10 16:04:14 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:05:03 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:05:04 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:05:04 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:05:04 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:05:04 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:05:04 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:05:05 INFO  Process:20 - spark appId : local-1707599105402
+2024-02-10 16:05:05 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:06:00 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:06:00 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:06:00 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:06:00 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:06:00 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:06:00 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:06:02 INFO  Process:20 - spark appId : local-1707599161779
+2024-02-10 16:06:02 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:06:33 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:06:34 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:06:34 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:06:34 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:06:34 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:06:34 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:06:35 INFO  Process:20 - spark appId : local-1707599195411
+2024-02-10 16:06:35 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:07:24 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:07:24 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:07:24 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:07:24 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:07:24 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:07:24 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:07:25 INFO  Process:20 - spark appId : local-1707599245475
+2024-02-10 16:07:25 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:08:06 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:08:07 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:08:07 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:08:07 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:08:07 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:08:07 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:08:08 INFO  Process:20 - spark appId : local-1707599288323
+2024-02-10 16:08:08 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:10:45 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:10:45 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:10:45 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:10:45 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:10:45 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:10:45 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:10:47 INFO  Process:20 - spark appId : local-1707599446786
+2024-02-10 16:10:47 INFO  Runner$:22 - Job completion time : 2
+2024-02-10 16:12:00 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:12:00 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:12:00 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:12:00 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:12:00 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:12:00 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:12:01 INFO  Process:20 - spark appId : local-1707599521586
+2024-02-10 16:12:01 INFO  Runner$:22 - Job completion time : 1
+2024-02-10 16:12:48 INFO  Runner$:15 - ####################: INPUT ARGUMENTS :####################
+2024-02-10 16:12:48 INFO  Runner$:16 - args(0) : C:\Users\sdama\IdeaProjects\etl_framework\src\main\resources\application.conf
+2024-02-10 16:12:48 INFO  Runner$:16 - args(1) : ingestion
+2024-02-10 16:12:48 INFO  Runner$:16 - args(2) : 20240210
+2024-02-10 16:12:48 INFO  Runner$:17 - ###########################################################
+2024-02-10 16:12:48 INFO  Process:18 - INGESTION Job started for ETL_FRMAE_WORK
+2024-02-10 16:12:50 INFO  Process:20 - spark appId : local-1707599569989
+2024-02-10 16:12:50 INFO  Runner$:22 - Job completion time : 1
