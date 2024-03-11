@@ -1,0 +1,17 @@
+package com.srinu.study.etl.framework.drools
+
+import com.srinu.study.etl.framework.drools.Transaction
+
+rule "High Amount Transaction"
+when
+    $transaction : Transaction( amount > 1000 )
+then
+    $transaction.setCategory("High Risk");
+end
+
+rule "Low Amount Transaction"
+when
+    $transaction : Transaction( amount <= 1000 )
+then
+    $transaction.setCategory("Low Risk");
+end
