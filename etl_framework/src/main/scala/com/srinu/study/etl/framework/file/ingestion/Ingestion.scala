@@ -1,8 +1,9 @@
 package com.srinu.spark.etl.farmework.file.ingestion
 
-import com.srinu.spark.etl.farmework.file.sources.{AvroFiles, DelimitedFiles, EbcdicFiles, FixedWidthFiles, JsonFiles, ParquetFiles, XmlFiles}
-import com.srinu.spark.etl.farmework.logging.Logging
-import com.srinu.spark.etl.farmework.utils.EtlUtils
+import com.srinu.spark.etl.farmework.file.sources._
+
+import com.srinu.study.etl.framework.utils.EtlUtils
+import com.srinu.study.etl.framework.logging.Logging
 import com.typesafe.config.Config
 import org.apache.spark.sql._
 
@@ -27,6 +28,7 @@ class Ingestion(spark: SparkSession, config: Config, filePath: String, inputDate
       case "XML" => new XmlFiles(spark, ingestionConfig, filePath).parseInputFile()
       case "PARQUET" => new ParquetFiles(spark, ingestionConfig, filePath).parseInputFile()
       case "AVRO" => new AvroFiles(spark, ingestionConfig, filePath).parseInputFile()
+      case "JDBC" => new AvroFiles(spark, ingestionConfig, filePath).parseInputFile()
       case _ => throw new Exception(s"ingestionType args like $ingestionTypes")
     }
     inputRawDf.show(false)

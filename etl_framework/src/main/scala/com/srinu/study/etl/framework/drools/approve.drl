@@ -1,0 +1,10 @@
+package com.srinu.study.etl.framework.drools;
+
+import com.srinu.study.etl.framework.Transaction
+
+rule "Approve Good Credit"
+  when
+    a: Transaction(creditScore > 600)
+  then
+    a.setApproved(true);
+end

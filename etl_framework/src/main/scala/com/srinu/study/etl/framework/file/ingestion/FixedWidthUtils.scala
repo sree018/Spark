@@ -1,5 +1,6 @@
 package com.srinu.study.etl.framework.file.ingestion
 
+import com.srinu.study.etl.framework.logging.Logging
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql._
 import org.apache.spark.sql.functions._

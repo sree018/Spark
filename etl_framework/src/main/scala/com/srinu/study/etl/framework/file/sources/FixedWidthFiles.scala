@@ -1,8 +1,9 @@
 package com.srinu.spark.etl.farmework.file.sources
 
-import com.srinu.spark.etl.farmework.logging.Logging
-import com.srinu.spark.etl.farmework.utils.EtlUtils
+
+import com.srinu.study.etl.framework.utils.EtlUtils
 import com.srinu.study.etl.framework.file.ingestion.FixedWidthUtils
+import com.srinu.study.etl.framework.logging.Logging
 import com.typesafe.config.Config
 import org.apache.hadoop.io.{LongWritable, Text}
 import org.apache.hadoop.mapred.TextInputFormat

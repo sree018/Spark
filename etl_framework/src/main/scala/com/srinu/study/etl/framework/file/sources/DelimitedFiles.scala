@@ -1,6 +1,7 @@
 package com.srinu.spark.etl.farmework.file.sources
 
-import com.srinu.spark.etl.farmework.logging.Logging
+
+import com.srinu.study.etl.framework.logging.Logging
 import com.typesafe.config.Config
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
